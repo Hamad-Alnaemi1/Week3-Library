@@ -9,8 +9,15 @@ class Book
     string ISBN;
    
     
-    //adding methods fixes the need to continusouly add the above lines to output.
+    //adding constructors
+    public Book(string bookTitle, string bookAuthor, string bookISBN)
+    {
+        Title = bookTitle;
+        Author = bookAuthor;
+        ISBN = bookISBN;
+    }
 
+    //adding methods fixes the need to continusouly add the above lines to output.
     void DisplayInfo()
     {
         Console.WriteLine($"Book Title: {Title}");
